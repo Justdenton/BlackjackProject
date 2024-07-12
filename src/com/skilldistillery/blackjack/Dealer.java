@@ -1,5 +1,6 @@
 package com.skilldistillery.blackjack;
 
+import com.skilldistillery.cardgames.common.Card;
 import com.skilldistillery.cardgames.common.Deck;
 
 public class Dealer extends Player {
@@ -16,15 +17,18 @@ public class Dealer extends Player {
 	
 	public Dealer() {
 		super();
-		deck = new Deck(); // New deck instance.
+		deck.shuffle();
 	}
 	
-	
-	// Dealer specific behaviors.
+	// Dealer specific behaviors BELOW:
 		// dealCard();
 	
 	public Card dealCard() {
-		return deck.drawCard();
+		return deck.dealCard();
+	}
+	
+	public void shuffleDeck() {
+		deck.shuffle();
 	}
 	
 

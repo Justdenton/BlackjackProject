@@ -9,16 +9,14 @@ public class Player {
 	// NO List<Card>
 	// DO NOT ADD A getHand();
 	
-	
 	private BlackjackHand hand;
-	
 	
 	public Player() {
 		this.hand = new BlackjackHand();
 	}
 	
 	public void addCardToHand(Card card) {
-		// hand.addCard(card);
+		hand.addCard(card);
 		// Dealer > Player > Hand
 	}
 
@@ -27,7 +25,16 @@ public class Player {
 	}
 	
 	public void displayHand() {
-		
+		System.out.println(hand);
 	}
+	
+	public boolean isBlackjack() {
+		return hand.isBlackjack();
+	}
+	
+	public boolean isBust() {
+		return hand.isBust();
+	}
+	
 	
 }

@@ -13,23 +13,35 @@ public class BlackjackHand extends AbstractHand {
 	}
 	
 	
-	
 	@Override
-	public void getHandValue() {
-		// TODO Auto-generated method stub
+	public int getHandValue() {
 		
+		// Starts at 0.
+		int combinedCardsTotal = 0;
+		
+		if (combinedCardsTotal % 1 == 2 && == 21) {
+			System.out.println("TEST BLACKJACK");
+		} else if (combinedCardsTotal < 21) {
+			
+		} else {
+			
+		}
+		
+		
+		return 0;
 	}
 	
 	
 	
 	public boolean isBlackjack() {
 		
+		return getHandValue() > 21;
 		return true;
 	}
 	
 	public boolean isBust() {
 		
-		return true;
+		return getHandValue() > 21;
 	}
 	
 	
