@@ -1,8 +1,7 @@
 package com.skilldistillery.blackjack;
 
-import java.util.ArrayList;
-
 import com.skilldistillery.cardgames.common.AbstractHand;
+import com.skilldistillery.cardgames.common.Card;
 
 public class BlackjackHand extends AbstractHand {
 	
@@ -12,38 +11,30 @@ public class BlackjackHand extends AbstractHand {
 	
 	}
 	
-	
 	@Override
 	public int getHandValue() {
 		
 		// Starts at 0.
 		int combinedCardsTotal = 0;
 		
-		if (combinedCardsTotal % 1 == 2 && == 21) {
-			System.out.println("TEST BLACKJACK");
-		} else if (combinedCardsTotal < 21) {
-			
-		} else {
-			
+		for (Card card : cardsInHand) {
+
+			combinedCardsTotal += card.getValue();
+		
 		}
+		return combinedCardsTotal;
 		
-		
-		return 0;
 	}
-	
-	
 	
 	public boolean isBlackjack() {
 		
-		return getHandValue() > 21;
-		return true;
+		return getHandValue() == 21 && cardsInHand.size() == 2;
 	}
 	
 	public boolean isBust() {
 		
 		return getHandValue() > 21;
 	}
-	
 	
 // isHard & isSoft - OPTIONAL	
 	public boolean isHard() {
@@ -55,10 +46,6 @@ public class BlackjackHand extends AbstractHand {
 		
 		return true;
 	}
-
-
-
-
 
 }
 

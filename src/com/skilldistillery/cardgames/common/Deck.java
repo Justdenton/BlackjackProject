@@ -19,7 +19,7 @@ public class Deck {
 			for (Rank rank : Rank.values()) {
 				cardsInDeck.add(new Card(rank, suit));
 			}
-		}  System.out.println((cardsInDeck));
+		} // System.out.println((cardsInDeck));
 	}
 
 	public int checkDeckSize() {

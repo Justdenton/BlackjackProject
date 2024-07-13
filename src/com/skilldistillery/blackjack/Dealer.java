@@ -11,7 +11,6 @@ public class Dealer extends Player {
 	// Dealer HAS-A (1) hand (2) deck.
 	
 	// Don't need to add a new hand, already has a hand (Dealer extends Player)
-	// Dealer needs deck.
 	
 	private Deck deck = new Deck();
 	
@@ -21,7 +20,6 @@ public class Dealer extends Player {
 	}
 	
 	// Dealer specific behaviors BELOW:
-		// dealCard();
 	
 	public Card dealCard() {
 		return deck.dealCard();
@@ -30,6 +28,13 @@ public class Dealer extends Player {
 	public void shuffleDeck() {
 		deck.shuffle();
 	}
-	
 
+	// First card - face down, second card - face up. 
+	@Override
+	public String toString() {
+		return "Dealer showing: " ;
+		//return "Player dealt: \n" + hand + "\nPlayer hand: " + displayHand();
+		
+	}
+	
 }

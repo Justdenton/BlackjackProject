@@ -24,8 +24,9 @@ public class Player {
 		return hand.getHandValue();
 	}
 	
-	public void displayHand() {
-		System.out.println(hand);
+	public int displayHand() {
+		return hand.getHandValue();
+		//System.out.println(hand);
 	}
 	
 	public boolean isBlackjack() {
@@ -35,6 +36,14 @@ public class Player {
 	public boolean isBust() {
 		return hand.isBust();
 	}
+
+	@Override
+	public String toString() {
+		//return "Player hand: " + displayHand() + hand;
+		return "Player dealt: \n" + hand + "\nPlayer hand: " + displayHand();
+	}
+	
+	
 	
 	
 }
