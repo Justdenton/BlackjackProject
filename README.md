@@ -15,7 +15,13 @@
 * Java
 	* enum
 	* APIE
+		* Abstraction
+		* Polymorphism
+		* Inheritance
+		* Encapsulation
 	* Conditionals
+		* Game logic
+	* ArrayList
 * Git
 * Eclipse IDE
 
@@ -26,4 +32,5 @@
 	* Encapsulation - Allowing different parts of the program to handle different aspects of the game
 	* Practice with toString() & hashCode()
 * Testing and debugging	
+* Practice with "HAS-A" relationships
 	
