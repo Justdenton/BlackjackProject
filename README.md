@@ -15,10 +15,15 @@
 * Java
 	* enum
 	* APIE
+	* Conditionals
 * Git
 * Eclipse IDE
 
 ### Lessons Learned
 
-* Using and accessing enums.
 * Building classes in an object-oriented manner;
+	* Using and accessing enums
+	* Encapsulation - Allowing different parts of the program to handle different aspects of the game
+	* Practice with toString() & hashCode()
+* Testing and debugging	
+	
