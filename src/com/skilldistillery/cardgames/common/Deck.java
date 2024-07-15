@@ -13,7 +13,6 @@ public class Deck {
 	}
 	
 	public void createDeck(){
-		
 		cardsInDeck = new ArrayList<>(); // 52?
 		for (Suit suit : Suit.values()) {
 			for (Rank rank : Rank.values()) {
@@ -31,21 +30,12 @@ public class Deck {
 	}
 
 	public void shuffle() {
-		//System.out.println(); // TEST
 		Collections.shuffle(cardsInDeck);
-		//System.out.println(cardsInDeck.get(4));/
-		//System.out.println();
 		//System.out.println(cardsInDeck);
 	}
 	
 	public boolean isEmpty() {
-		
-		if(this.cardsInDeck.isEmpty()) {
-			return true;
-		} else {
-			return false;
-		}
+		return cardsInDeck.isEmpty();
 	}
-	
 
 }
